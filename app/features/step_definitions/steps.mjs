@@ -1,5 +1,3 @@
 import { Given } from "@cucumber/cucumber";
 
-Given("I have a {word} of {float}° Celsius", (word, float) => {
-  console.log(float);
-});
+Given("I have a temperature of {float}° {units}", (float, units) => {});

@@ -1,6 +1,9 @@
-import { defineParamterType } from "@cucumber/cucumber";
+import { defineParameterType } from "@cucumber/cucumber";
 
-defineParamterType({
+defineParameterType({
   name: "units",
   regexp: /C|F|Celsius|Fahrenheit/,
+  transformer() {
+    return "Celsius";
+  },
 });
